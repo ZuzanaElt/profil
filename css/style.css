@@ -39,7 +39,6 @@ nav{
 
 .pnav{
   width:max-content;
-  text-decoration: underline;
   padding:5px;  }
 
 /*Hero banner with text box*/
@@ -76,12 +75,10 @@ height:300px;
 
 .page-section{
   display:flex;
-  
+  flex-direction:row; 
 }
-.flex1 .flex2 {
-  margin-top:20px;
- 
-}
+
+
 
 /*About me*/
 .about-me{
@@ -98,25 +95,75 @@ height:300px;
   padding-right:20px;
 }
 
-/*Work section*/
+/*"Work" section*/
 
 .work-title{
-  margin-left:8%;
+  margin-left:78px;
   margin-right:2px;
   padding-right:5px;
   border-right: 3px solid black;
+  height: 800px;
+}
+
+.obraz1{
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.obraz2{
+  background-image:url(../images/02-portfolio-1.jpg);
+}
+
+.obraz3{
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.obraz4{
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.obraz5{
+  background-image: url(../images/02-run-buddy.jpg);
+}
+
+.flex-container{
+  display:flex;
+  flex-direction:row ;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.item:first-child{
+  min-height:300px;
+  flex-basis:100%;
+}
+
+.item{
+    display:flex;
+    align-items: flex-end;
+    flex-basis:calc(50% - 1em);
+    margin:0.5em;
+    min-height:150px;
+}
+
+.item div{
+    background-color:lightblue;
+    padding:10px;
+}
+
+@media screen and (max-width:768px) {
+  .item{flex-basis:100%;}
+}
+
+@media screen and (max-width:600px){
+  .item:first-child{
+    min-height:150px;}
 }
 
 
 
 
-
-
-a
-
-
 /*footer*/
-.contactme-title{
+.con-title{
   margin-left:5%;
   margin-right:2px;
   padding-right:5px;
@@ -125,11 +172,15 @@ a
 
 .spacingfooter{
   display:flex;
+ justify-content:space-between;
   align-items: center;
   margin-left:10px;
-  
 }
 
+.spacingfooter a {
+  padding-right: 20px;
+}
 .spacingfooter p{
   padding-right: 20px;
+  padding-left:20px;
 }
