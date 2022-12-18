@@ -34,11 +34,12 @@ nav{
  
   align-items: center;
   display:inline-flex;
+  padding-right:10px;
 }
 
 .pnav{
   width:max-content;
-  padding:5px;  }
+  padding:10px;  }
 
 /*Hero banner with text box*/
 .hero-banner{
@@ -46,7 +47,7 @@ nav{
   height:300px;
   position:relative;
   text-align: right;
-  margin-right:10px;
+  
 }
 .hero-image{
 width:100%;
